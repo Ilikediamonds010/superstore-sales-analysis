@@ -1,57 +1,183 @@
-# Sales Analysis Project (Superstore)
+# 📊 Sales Analysis Project – Superstore
 
-## Objective
-Analyze sales data to understand revenue trends, product performance, and regional profitability, and to identify actionable business insights using SQL and Excel.
+## 🎯 Objective
+Analyze retail sales data to understand revenue trends, product performance, and regional profitability using **SQL, Excel, and Power BI**.
 
-## Dataset
-Sample Superstore dataset containing order, product, customer, and sales information.  
-The dataset was originally in CSV format, with date fields stored as text.
+This project demonstrates a complete **data analytics workflow**, including querying data, validating results, and building an interactive dashboard.
 
-## Tools Used
-- SQL (SQLite)
-- Microsoft Excel
-- Power BI (to be added)
+---
 
-## Key Questions
-- How does sales change over time on a monthly basis?
-- Which product categories generate the most revenue?
-- Which regions are the most and least profitable?
-- Are there products that generate high sales but low or negative profit?
+# 🗂 Dataset
+The dataset used is the **Sample Superstore dataset**, which contains transactional retail data including:
 
-## Status
-- SQL: Completed (Phase 1)
-- Excel: Completed (Phase 2)
-- Power BI: Pending (Phase 3)
+- Order details
+- Customer information
+- Product categories and sub-categories
+- Sales and profit values
+- Regional performance
+- Order dates
 
-## Key Metrics (KPIs)
-- Total Sales
-- Total Profit
-- Sales by Category
-- Sales by Region
-- Monthly Sales Trend
-- Top Products by Sales
+The dataset was originally provided as a **CSV file**, with the Order Date column stored as text.
 
-## SQL Analysis
-SQL was used to perform core data analysis, including calculating total sales and profit, analyzing category-wise and region-wise performance, identifying top-performing products, and generating monthly sales trends.  
-All SQL queries used for the analysis are stored in a separate SQL file.
+---
 
-## Excel Analysis
-Excel was used to validate SQL results using pivot tables.  
-The Order Date column was converted from text to a proper date format to enable accurate monthly grouping and trend analysis.
+# 🛠 Tools Used
+
+- **SQL (SQLite)** – Data querying and analysis  
+- **Microsoft Excel** – Data validation and pivot-table analysis  
+- **Power BI** – Interactive dashboard and visualization  
+
+---
+
+# ❓ Key Business Questions
+
+This project answers the following questions:
+
+- 📈 How does sales change over time on a **monthly basis**?
+- 🛍 Which **product categories** generate the most revenue?
+- 🌎 Which **regions are the most and least profitable**?
+- 📦 Which **products contribute the most to total sales**?
+- ⚠️ Are there products generating **high sales but low or negative profit**?
+
+---
+
+# 📊 Key Performance Indicators (KPIs)
+
+The dashboard tracks the following metrics:
+
+- 💰 **Total Sales:** $2.3M  
+- 📦 **Total Orders:** 9,994  
+- 📈 **Total Profit:** $286.4K  
+- 📉 **Profit Margin:** 12.5%
+
+These metrics provide a quick overview of overall business performance.
+
+---
+
+# 🧠 SQL Analysis
+
+SQL was used to perform core analytical queries, including:
+
+- Calculating **total sales and total profit**
+- Analyzing **sales by category**
+- Evaluating **profitability by region**
+- Identifying **top-performing products**
+- Generating **monthly sales trends**
+
+All SQL queries used in this project are available in the **sql folder**.
+
+---
+
+# 📑 Excel Analysis
+
+Excel was used to validate the SQL results using **Pivot Tables**.
+
+The Order Date column was converted into a proper **date format** to allow grouping by month and year.
 
 Pivot tables created:
-- Sales by Category
-- Sales by Region
-- Monthly Sales Trend (grouped by Month and Year)
 
-## Initial Insights
-- The Technology category contributes the highest total sales.
-- A small number of products account for a large portion of overall revenue.
-- Some high-selling products generate negative profit, indicating pricing or discount issues.
-- Certain regions consistently outperform others in terms of profitability.
-- Monthly sales fluctuate across the year, indicating seasonal patterns.
+- 📊 Sales by Category  
+- 🌎 Sales by Region  
+- 📅 Monthly Sales Trend
 
-## Next Steps
-- Build an interactive Power BI dashboard to visualize KPIs and trends.
-- Add slicers for Category, Region, and Time.
-- Derive business recommendations based on combined SQL and Excel insights.
+The Excel workbook used for this analysis is included in the repository.
+
+---
+
+# 📊 Power BI Dashboard
+
+An interactive **Power BI dashboard** was created to visualize business performance.
+
+The dashboard includes:
+
+- 📈 Sales Trend by Month  
+- 🛍 Sales by Category  
+- 🌎 Profit by Region  
+- 🏆 Top 5 Products by Sales  
+- 📦 Sub-Category Distribution  
+- 🎛 Interactive filters for Category and Year
+
+---
+
+# 🖼 Dashboard Preview
+
+![Superstore Dashboard](images/dashboard.png)
+
+---
+
+# 🔍 Key Insights
+
+### 💻 Technology category drives the highest revenue
+Among the product categories, **Technology generates the most sales**.
+
+### 🌎 West region generates the highest profit
+Regional analysis shows the **West region consistently produces the highest profit**.
+
+### 🏆 Revenue is concentrated in a few products
+The top 5 products contribute a large portion of total sales.
+
+### ⚠️ Some high-selling products generate negative profit
+Certain products generate strong sales but **negative profit**, suggesting discount or pricing issues.
+
+### 📅 Sales fluctuate across months
+Monthly sales trends indicate **seasonal variations in revenue**.
+
+---
+
+# 📁 Project Structure
+
+```
+Project_1_Sales_Analysis
+│
+├── dashboard
+│   └── superstore_dashboard.pbix
+│
+├── data
+│   └── superstore.csv
+│
+├── images
+│   └── dashboard.png
+│
+├── sql
+│   └── analysis_queries.sql
+│
+├── Superstore_Analysis.xlsx
+│
+└── README.md
+```
+
+---
+
+# ▶️ How to Use
+
+1. Clone or download this repository.
+2. Open the dataset using **SQLite or Excel**.
+3. Run the SQL queries from the `sql` folder.
+4. Open the **Power BI dashboard file (.pbix)** to explore the interactive dashboard.
+
+---
+
+# 🚀 Future Improvements
+
+Potential improvements include:
+
+- Customer segmentation analysis
+- Sales forecasting
+- Discount impact analysis
+- Additional KPIs and deeper drill-down dashboards
+
+---
+
+# 👨‍💻 Author
+
+Vinay Mehra
+Data Analytics Portfolio Project  
+Created using SQL, Excel, and Power BI.
+
+---
+
+# ⭐ Project Status
+
+SQL Analysis       ✅ Completed  
+Excel Validation   ✅ Completed  
+Power BI Dashboard ✅ Completed
