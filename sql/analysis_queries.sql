@@ -31,4 +31,5 @@ SUM(Sales) AS total_monthly_sales
 FROM superstore
 GROUP BY month
 ORDER BY total_monthly_sales DESC
+
 LIMIT 5;
